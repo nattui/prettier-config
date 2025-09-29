@@ -28,14 +28,14 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsdown",
-    "check": "bun check:format && bun check:type",
-    "check:fix": "bun check:format:fix && bun check:type:fix",
+    "check": "bun run check:format && bun run check:type",
+    "check:fix": "bun run check:format:fix && bun run check:type:fix",
     "check:format": "prettier --check .",
     "check:format:fix": "prettier --write .",
     "check:type": "tsc --noEmit",
     "check:type:watch": "tsc --noEmit --watch",
     "dev": "tsdown --watch",
-    "prepublishOnly": "bun build"
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
