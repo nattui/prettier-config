@@ -1,6 +1,6 @@
 {
   "name": "@nattui/prettier-config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A shareable Prettier configuration with opinionated defaults and useful plugins",
   "keywords": [
     "prettier",
@@ -35,13 +35,11 @@
     "dev": "tsdown --watch",
     "prepublishOnly": "bun run build"
   },
-  "dependencies": {
-    "prettier-plugin-css-order": "^2.1.2",
-    "prettier-plugin-packagejson": "^2.5.19",
-    "prettier-plugin-sort-json": "^4.1.1"
-  },
   "devDependencies": {
     "prettier": "^3.6.2",
+    "prettier-plugin-css-order": "^2.1.2",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-sort-json": "^4.1.1",
     "tsdown": "^0.15.5",
     "typescript": "^5.9.2"
   },

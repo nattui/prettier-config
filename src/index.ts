@@ -1,12 +1,15 @@
 import { type Config } from "prettier"
+import prettierPluginCssOrder from "prettier-plugin-css-order"
+import prettierPluginPackagejson from "prettier-plugin-packagejson"
+import prettierPluginSortJson from "prettier-plugin-sort-json"
 
 const config: Config = {
   cssDeclarationSorterOrder: "alphabetical",
   jsonRecursiveSort: true,
   plugins: [
-    "prettier-plugin-css-order",
-    "prettier-plugin-packagejson",
-    "prettier-plugin-sort-json",
+    prettierPluginCssOrder,
+    prettierPluginPackagejson,
+    prettierPluginSortJson,
   ],
   semi: false,
 }
