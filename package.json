@@ -34,7 +34,8 @@
     "check:format:fix": "prettier --write .",
     "check:type": "tsc --noEmit",
     "check:type:watch": "tsc --noEmit --watch",
-    "dev": "tsdown --watch"
+    "dev": "tsdown --watch",
+    "prepublishOnly": "bun build"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
