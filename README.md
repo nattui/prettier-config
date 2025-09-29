@@ -52,13 +52,13 @@ Create a `.prettierrc` file in your project root:
 If you need to override some settings, create a `.prettierrc.mjs` file:
 
 ```js
-import nattPrettierConfig from "@nattui/prettier-config"
+import prettierConfig from "@nattui/prettier-config"
 
 /**
  * @type {import("prettier").Config}
  */
 const config = {
-  ...nattPrettierConfig,
+  ...prettierConfig,
   // Override any settings here
   semi: true, // Enable semicolons if you prefer
   singleQuote: true, // Use single quotes
@@ -80,28 +80,6 @@ This configuration includes the following settings:
 - [`prettier-plugin-css-order`](https://github.com/Siilwyn/prettier-plugin-css-order) - Sorts CSS declarations
 - [`prettier-plugin-packagejson`](https://github.com/matzkoh/prettier-plugin-packagejson) - Formats package.json files
 - [`prettier-plugin-sort-json`](https://github.com/Gudahtt/prettier-plugin-sort-json) - Sorts JSON files recursively
-
-## Editor Integration
-
-Make sure you have the Prettier extension installed in your editor:
-
-- **VS Code**: [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- **WebStorm/IntelliJ**: Built-in Prettier support
-- **Vim/Neovim**: Various plugins available
-- **Sublime Text**: [JsPrettier](https://packagecontrol.io/packages/JsPrettier)
-
-## Scripts
-
-Add these scripts to your `package.json` for easy formatting:
-
-```json
-{
-  "scripts": {
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
-  }
-}
-```
 
 ## Related
 
