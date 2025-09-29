@@ -1,6 +1,6 @@
 {
   "name": "@nattui/prettier-config",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A shareable Prettier configuration with opinionated defaults and useful plugins",
   "keywords": [
     "prettier",
@@ -18,14 +18,12 @@
   "author": "Natt Nguyen <hello@natt.sh> (https://natt.sh)",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsdown",
     "check": "bun run check:format && bun run check:type",
