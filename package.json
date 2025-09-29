@@ -1,7 +1,7 @@
 {
   "name": "@nattui/prettier-config",
-  "version": "0.0.1",
-  "description": "Prettier config",
+  "version": "0.0.2",
+  "description": "A shareable Prettier configuration with opinionated defaults and useful plugins",
   "keywords": [
     "prettier",
     "config"
